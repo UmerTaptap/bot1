@@ -1,0 +1,65 @@
+version: "3.1"
+rules:
+
+- rule: handle greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: handle goodbyes
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: handle thanks
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: handle natural queries
+  steps:
+  - intent: natural_query
+  - action: utter_natural_query
+
+- rule: handle irrelevant queries
+  steps:
+  - intent: irrelevant
+  - action: action_handle_irrelevant
+
+- rule: Handle introduction queries
+  steps:
+  - intent: introduction_query
+  - action: action_handle_introduction_queries  
+
+
+
+
+- rule: Provide Information About Covered Industries
+  steps:
+  - intent: ask_industries_covered
+  - action: action_ask_industries_covered
+
+- rule: Provide Information About Specific Industries
+steps:
+- intent: ask_industry_specific
+- action: actions_ask_industry_specific
+
+- rule: Provide Information About Covered Sectors
+  steps:
+  - intent: ask_sectors_covered
+  - action: action_ask_sectors_covered
+
+- rule: Provide Information About Specific Sector
+  steps:
+  - intent: ask_procurements_by_sector
+  - action: action_ask_procurements_by_sector
+
+- rule: Provide Procurement By Sector and Industry Both
+  steps:
+  - intent: ask_procurements_by_industry_and_sector
+  - action: action_ask_procurements_by_industry_and_sector  
+
+- rule: Provide Procurement By Title
+  steps:
+  - intent: ask_procurement_search_by_title
+  - action: action_ask_procurement_search_by_title  

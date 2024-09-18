@@ -1,0 +1,7 @@
+{
+  "name": "Rasa Bot",
+  "description": "A barebones Rasa server installation using Docker",
+  "repository": "https://github.com/UmerTaptap/bot1",
+  "logo": "https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/12/rasa-framework.png",
+  "stack": "container"
+}

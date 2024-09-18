@@ -1,0 +1,64 @@
+version: "3.1"
+stories:
+
+- story: user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user expresses thanks
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: user provides natural query
+  steps:
+  - intent: natural_query
+  - action: utter_natural_query
+
+- story: user provides irrelevant input
+  steps:
+  - intent: irrelevant
+  - action: action_handle_irrelevant
+
+- story: Introduction query handling
+  steps:
+  - intent: introduction_query
+  - action: action_handle_introduction_queries
+
+
+
+- story: User ask industries covered
+  steps:
+  - intent: ask_industries_covered
+  - action: action_ask_industries_covered
+
+- story: User ask specific industrie
+  steps:
+  - intent: ask_industry_specific
+  - action: actions_ask_industry_specific  
+
+- story: User ask sectors covered
+  steps:
+  - intent: ask_sectors_covered
+  - action: action_ask_sectors_covered
+
+- story: User ask specific sector
+  steps:
+  - intent: ask_procurements_by_sector
+  - action: action_ask_procurements_by_sector  
+
+- story: User ask procurement by providing sector and industry
+  steps:
+  - intent: ask_procurements_by_industry_and_sector
+  - action: action_ask_procurements_by_industry_and_sector    
+
+- story: User ask procurement by title
+  steps:
+  - intent: ask_procurement_search_by_title
+  - action: action_ask_procurement_search_by_title    
